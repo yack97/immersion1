@@ -1,0 +1,372 @@
+/*Body*/
+*{
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+}
+/*Navbar*/
+.navbar{
+  padding: 5px;
+  background-color: rgb(65, 29, 124);
+}
+ 
+.navbar-nav li a {
+    font-family: 'Times New Roman', serif;
+    color: white;
+    font-size: 1em;
+    margin-right: 10px;
+    padding: 0 25px;
+}
+
+.navbar-brand img {
+    max-width: 150px;
+    padding-left: 60px;
+}
+
+/*Carousel*/
+.carousel-item {
+  height: 700px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 3); /* Ajusta los valores según tus preferencias */
+}
+
+.carousel-item img{
+  height: 100%;
+  width: 100%;
+}
+/*===================================*/
+/*H1 frase*/
+
+.frase h1 {
+  margin-top: 60px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 3px #f8f5f5;
+  color: #ffffff;
+}
+
+/*======================================*/
+/*Propuestas*/
+.experiencia {
+    padding: 40px 40px 80px 40px;
+  }
+  
+  .experiencia .columna {
+    background-color: #989595;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 3); /* Ajusta los valores según tus preferencias */
+  }
+  
+  .experiencia .columna:hover {
+    color: rgb(253, 250, 250);
+    background-color: #4a2b87;
+  }
+  
+  .experiencia i {
+    font-size: 2.5rem;
+    color: #fffefe;
+    background-color: #f4f4f8;
+    padding: 8px 19px;
+    border-radius: 50%;
+  }
+  
+  .experiencia-titulo {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+/*============================================================*/
+/*imagen transicion mision y vision*/
+.shaped-section {
+  position: relative;
+  background-color: #3498db; /* Color de fondo del interior de la forma */
+  overflow: hidden;
+  height: 200px; /* Ajusta la altura de tu sección */
+
+}
+
+.shaped-section:before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%); /* Define la forma de "S" aquí */
+  background-color: #3498db; /* Color de fondo del interior de la forma */
+}
+
+.imagen {
+  width: 500px; /* Ancho de 200 píxeles */
+  height: 500px; /* Alto de 150 píxeles */
+}
+.imagen-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Para ocupar toda la altura del contenedor */
+}
+/* Estilo base de la imagen */
+.imagen-container .imagen {
+  transition: transform 0.3s; /* Agrega una transición suave */
+}
+
+/* Estilo de la imagen cuando se haga hover (cursor sobre la imagen) */
+.imagen-container:hover .imagen {
+  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+}
+/*estilo separacion*/
+
+.informeMision {
+  position: relative;
+  background-color: #3498db; /* Color de fondo de la sección */
+  padding: 20px 0;
+}
+
+.informeMision::before,
+.informeMision::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid white; /* Color y grosor de la línea superior */
+  z-index: 1;
+}
+
+.informeMision::before {
+  top: 10;
+}
+
+.informeMision::after {
+  bottom: 0.6;
+}
+/*COMO PODEMOS AYUDAR*/
+
+.ofrecemos {
+  padding: 40px;
+}
+
+.containerbtn {
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 01);
+  padding: 10px 10px 20px 10px;
+  border: 1px solid rgb(21, 239, 159);
+  margin-bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius:20px; 
+}
+.containerFRS{
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Times New Roman', serif;
+  padding: 10px 60px 20px 60px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius:20px;
+
+}
+/*===========================================================*/
+/*formulario*/
+.containform {
+  padding: 10px;
+  border: 2px solid #ccc; /* Borde personalizado */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra personalizada */
+  margin-bottom: 20px; /* Espacio entre los campos de formulario */
+
+}
+
+.containform .form-control {
+  margin-bottom: 10px; /* Espacio entre los campos de formulario */
+}
+
+.containform button {
+  background-color: #28a745; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Quita el borde del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  margin-bottom: 10px;
+
+}
+
+.containform button:hover {
+  background-color: #218838; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/*efecto transicion*/
+/* Estilo para elementos con la clase 'name' */
+.name {
+  background: linear-gradient(90deg, transparent 0%, violet 0%) no-repeat;
+  background-size: 200% 100%;
+  color: black;
+  animation: backgroundChange 5s infinite ;
+  clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+
+
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-position:  -100% 0 ; /* Comienza con la flecha completamente visible en la izquierda */
+  }
+  100% {
+    background-position: 100% 0; /* Termina con la flecha completamente visible en la derecha */
+    clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
+  }
+}
+.paragraph {
+  background: linear-gradient(90deg, transparent 0%, rgb(255, 161, 21) 0%) no-repeat;
+  background-size: 200% 100%;
+  color: black;
+  animation: backgroundChange1 5s infinite ;
+  clip-path: polygon(0 0, 96% 0, 100% 100%, 0% 100%);
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+
+
+}
+
+@keyframes backgroundChange1 {
+  0% {
+    background-position:  -100% 0 ; /* Comienza con la flecha completamente visible en la izquierda */
+  }
+  100% {
+    background-position: 100% 0; /* Termina con la flecha completamente visible en la derecha */
+    clip-path: polygon(0 0, 96% 0, 100% 100%, 0% 100%);
+  }
+}
+/*====================================*/
+/*Equipo de trabajo*/
+.equipotrabajo{
+  padding: 50PX;
+  bottom: 40px;
+}
+
+.imagen-circular {
+  width: 150px; /* Ajusta el ancho según tus preferencias */
+  height: 150px; /* Ajusta la altura según tus preferencias */
+  border-radius: 50%; /* Esto hace que el borde sea circular */
+  object-fit: cover; /* Para mantener la imagen proporcional y llenar el círculo */
+}
+
+.seccion-diagonal {
+  background: linear-gradient(to top right, rgb(14, 199, 245) 0%, rgb(241, 12, 34) 100%);
+  padding: 30px; /* Puedes ajustar esto según tus necesidades */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 10); 
+}
+/*=================================================*/
+
+  /* Contacto */
+
+  
+  .contacto .rectangulo {
+    margin-top: 5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+  }
+  
+  .contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover i {
+    color: black;
+  }
+  
+  
+  /* Pie de pagina (footer) */
+
+footer {
+    min-height: 500px;
+    background-color: #656060;
+  }
+  
+  .footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid rgb(226, 22, 22);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+  }
+  
+  .iconos-redes-sociales a:hover i {
+    color: black;
+  }
+  
+  .derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+  }
+  

@@ -1,0 +1,277 @@
+ /*carrousel pantallas pequenas*/
+  .carousel-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 768px; 
+    overflow: hidden; /* Para ocultar imágenes que desborden */
+    position: relative; /* Para posicionar las imágenes */
+  }
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen */
+    position: absolute; /* Permite superponer las imágenes */
+    opacity: 0; /* Inicialmente, oculta todas las imágenes */
+    transition: opacity 0.5s ease-in-out; /* Efecto de transición al mostrar/ocultar imágenes */
+  }
+
+  @media (max-width: 768px) {
+
+    .carousel-container {
+      width: 100%;
+      height:768px; 
+    }
+  
+     Estilo para las imágenes dentro del carrusel */
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen */
+    position: absolute; /* Permite superponer las imágenes */
+    opacity: 0; /* Inicialmente, oculta todas las imágenes */
+    transition: opacity 0.5s ease-in-out; /* Efecto de transición al mostrar/ocultar imágenes */
+  }
+  }
+
+  /* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+/* Estilos para el logo */
+.logo {
+    flex: 1;
+    margin-left: 20px; /* Ajusta el margen según tus necesidades */
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+}
+
+/*peunxupL*/
+
+/*Parte carrousel ===========*/
+
+.carousel-container {
+    width: 100%;
+    height: 680px; 
+    overflow: hidden; /* Para ocultar imágenes que desborden */
+    position: relative; /* Para posicionar las imágenes */
+  }
+  /* Estilo para las imágenes dentro del carrusel */
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen */
+    position: absolute; /* Permite superponer las imágenes */
+    opacity: 0; /* Inicialmente, oculta todas las imágenes */
+    transition: opacity 0.5s ease-in-out; /* Efecto de transición al mostrar/ocultar imágenes */
+  }
+  
+  /* Estilo para los botones del carrusel */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Estilo para la flecha izquierda */
+  #prevBtn {
+    left: 10px; /* Ajusta la posición desde la izquierda */
+  }
+  
+  /* Estilo para la flecha derecha */
+  #nextBtn {
+    right: 10px; /* Ajusta la posición desde la derecha */
+  }
+  
+  .carousel-btn:hover {
+    opacity: 1;
+  }
+  
+  /*========================*/
+  
+  /*paquetes*/
+  
+  /* Estilo para el contenedor de anuncios */
+  .ad-container {
+    display: flex; /* Mostrar los contenedores en una fila */
+    justify-content: space-between; /* Espacio entre los contenedores */
+    padding: 10px; /* Espacio interno para el sombreado */
+  }
+  
+  /* Estilo para los contenedores de publicidad individuales */
+  .ad-box {
+    flex: 0 0 calc(33.33% - 20px); /* Ancho fijo para cada contenedor (ajusta según sea necesario) */
+    background-color: #fff; /* Color de fondo del contenedor de publicidad */
+    border: 1px solid #ccc; /* Borde para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado */
+    transition: transform 0.2s ease-in-out; /* Efecto de transformación al pasar el mouse */
+  }
+  
+  /* Estilo para las imágenes dentro de los contenedores de publicidad */
+  .ad-box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Efecto de elevación al pasar el mouse */
+  .ad-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /*Formulario*/
+  
+  .form-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .input-container {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #00bcd4;
+    background: transparent;
+    color: #ffffff;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #ff5722;
+    outline: none;
+  }
+  
+  button {
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ff5722;
+  }
+  
+  /*pruebas =============*/
+  

@@ -1,0 +1,433 @@
+  /* Estilos para centrar horizontalmente los elementos de la lista */
+  .nav-links {
+    display: flex;
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    list-style: none;
+    text-align: center;
+    height: 100%; /* Asegura que los elementos ocupen toda la altura de la barra de navegación */
+    margin: 10px; /* Elimina el margen para centrarlos completamente */
+    padding: 10px; /* Elimina el relleno para centrarlos completamente */
+  }
+  /* Agregar espacio entre elementos de la lista */
+  .nav-links a {
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+    color: #fff;
+    font-family: "Times New Roman", sans-serif;
+    text-decoration: none; /* Quita el subrayado */
+  }
+
+  /*Header
+header {
+    background-color: #351375;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 20px 600px;
+  }
+
+  /* Estilos generales para la barra de navegación */
+.navbar {
+    background-color: #422184;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Estilos para el botón de hamburguesa */
+.hamburger {
+    display: none; /* Ocultar por defecto en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 300px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Estilos para la lista de menú */
+.menu {
+    list-style: none;
+    display: flex;
+    text-align: center;
+
+}
+
+.menu li {
+    margin-right: 20px;
+    text-align: center;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+/* Media query para mostrar el botón de hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none; /* Ocultar el menú en pantallas pequeñas */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #3d35b3;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed; /* Hace que el navbar sea fijo */
+    top: 0; /* Fija el navbar en la parte superior */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+}
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente en la pantalla */
+
+}
+
+/* Estilos para el contenedor del navbar */
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente en la pantalla */
+    background-color: #333; /* Puedes personalizar el fondo si lo deseas */
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #3d35b3;
+    color: #f7f5fa;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+/* Estilos para el logo */
+.logo img {
+    width: 100px; /* Ajusta el tamaño según tu diseño */
+}
+
+/* Estilos para los elementos de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos de navegación */
+ }
+ 
+ .nav-links li {
+    margin-right: 20px;
+    display: flex;
+
+    align-items: center; /* Centra verticalmente los elementos de navegación */
+
+ }
+ 
+ .nav-link a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block; /* Permite centrar horizontalmente */
+    text-align: center; /* Centra horizontalmente el texto */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px 0; /* Añade un espacio alrededor del texto */
+ }
+
+/* Estilos para el menú desplegable en pantallas pequeñas */
+.menu-icon {
+    display: none; /* Ocultar por defecto en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+
+<ul class="nav-links">
+<!--<li><a href="/">Inicio</a></li>
+<li><a href="/nosotros">Nosotros</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/contacto">Contacto</a></li>-->
+<li><a class="nav-link" href="/">Inicio</a></li>
+<li><a class="nav-link" href="/nosotros">Nosotros</a></li>
+<li><a class="nav-link" href="/blog">Blog</a></li>
+<li><a class="nav-link" href="/contacto">Contacto</a></li>
+</ul>
+<div class="menu-icon" onclick="mostrarMenu()">
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+</div>
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #3d35b3;
+    color: #f7f5fa;
+    display: flex;
+    justify-content: space-between; /* Cambia a espacio entre los elementos */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 110px; /* Ajusta el tamaño según tu diseño */
+    margin-left: 150px; /* Mueve el logo 30 píxeles hacia la derecha */
+}
+
+/* Estilos para los elementos de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos de navegación */
+}
+
+/* Agregar espacio entre elementos de la lista */
+.nav-links a {
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+    color: #fff;
+    font-family: "Times New Roman", sans-serif;
+    text-decoration: none; /* Quita el subrayado */
+}
+/* Estilos para el botón de hamburguesa en pantallas pequeñas */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+
+/* Media query para mostrar el menú desplegable en pantallas pequeñas */
+@media (max-width: 768px) {
+
+    /* Estilos para el botón de hamburguesa */
+    .menu-icon {
+        display: flex;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 3px 0;
+    }
+
+    /* Ocultar la lista de navegación */
+    .nav-links {
+        display: none;
+    }
+
+    /* Mostrar la lista de navegación desplegable */
+    .nav-links-dropdown {
+        display: flex;
+        flex-direction: column;
+        background-color: #3d35b3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .nav-links-dropdown a {
+        margin: 10px 0; /* Espacio entre elementos de la lista */
+        text-align: center;
+    }
+
+    /* Estilos para el logo */
+    .logo img {
+        width: 100px; /* Ajusta el tamaño según tu diseño */
+        margin-left: 10px; /* Mueve el logo 30 píxeles hacia la derecha */
+    }
+}
+
+<div class="logo">
+<img src="static/img/CASCO2.svg" alt="Logo" href="/">
+</div>
+<button class="nav-toggle" aria-label="Abrir menú">
+<i class="fas fa-bars"></i>
+</button>
+<ul class="nav-menu">
+<li class="nav-menu-item">
+  <a href="/" class="nav-menu-link nav-link">inicio</a>
+</li>
+<li class="nav-menu-item">
+  <a href="/nosotros" class="nav-menu-link nav-link">Nosotros</a>
+</li>
+<li class="nav-menu-item">
+  <a href="/blog" class="nav-menu-link nav-link">Blog</a>
+</li>
+<li class="nav-menu-item">
+  <a href="/contacto"class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+</li>
+</ul>
+
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #3d35b3;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilos para el logo */
+.logo {
+    flex: 1;
+    margin-left: 20px; /* Ajusta el margen según tus necesidades */
+}
+
+.logo img {
+    width: 110px;
+}
+
+/* Estilos para el botón de hamburguesa en pantallas grandes */
+.nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para el menú en pantallas grandes */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-menu-item {  navbar-nav-scroll" style="--bs-scroll-height: 100px;"
+    margin: 0 10px;
+}
+
+.nav-menu-link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+    background-color: #034574;
+    transition: 0.5s;
+}
+
+/* TOGGLE */
+/* Estilos para el botón de hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    /* Estilos para el menú desplegable en pantallas pequeñas */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #2c3e50;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #83c5f7;
+    }
+
+    .nav-toggle:checked ~ .nav-menu {
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+}
+
+
+<div class="logo">
+<a href="/">
+  <img src="static/img/CASCO2.svg" alt="Logo">
+</a>
+</div>
+<button class="nav-toggle" aria-label="Abrir menú">
+<i class="fas fa-bars"></i>
+</button>
+<ul class="nav-menu">
+<li class="nav-menu-item">
+  <a href="/" class="nav-menu-link">Inicio</a>
+</li>
+<li class="nav-menu-item">
+  <a href="/nosotros" class="nav-menu-link">Nosotros</a>
+</li>
+<li class="nav-menu-item">
+  <a href="/blog" class="nav-menu-link">Blog</a>
+</li>
+<li class="nav-menu-item">
+  <a href="/contacto" class="nav-menu-link">Contacto</a>
+</li>
+</ul>

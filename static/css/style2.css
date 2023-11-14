@@ -1,0 +1,238 @@
+/*Body*/
+
+
+/*Navbar*/
+.navbar{
+    padding: 5px;
+    background-color: rgb(65, 29, 124);
+}
+ 
+.navbar-nav li a {
+    font-family: 'Times New Roman', serif;
+    color: white;
+    font-size: 1em;
+    margin-right: 10px;
+    padding: 0 25px;
+}
+
+.navbar-brand img {
+    max-width: 150px;
+    padding-left: 60px;
+}
+
+/*Carousel*/
+#carouselPrincipal {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 3); /* Ajusta los valores según tus preferencias */
+
+}
+.carousel img {
+  height: 100%;
+  width: 100%;
+}
+
+/*Propuestas*/
+.experiencia {
+    padding: 40px 40px 80px 40px;
+  }
+  
+  .experiencia .columna {
+    padding: 20px;
+    border: 2px solid #e1cfcf4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+  }
+  
+  .experiencia .columna:hover {
+    color: rgb(253, 250, 250);
+    background-color: #4a2b87;
+  }
+  
+  .experiencia i {
+    font-size: 2.5rem;
+    color: #bebebe;
+    background-color: #1a1ad7;
+    padding: 8px 19px;
+    border-radius: 50%;
+  }
+  
+  .experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .badge {
+    margin: 5px;
+  }
+
+/*formulario*/
+.testimonios {
+    padding: 40px 40px 80px 40px;
+  }
+  
+  .testimonios .carousel {
+    max-width: 800px;
+  }
+  
+  .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+  }
+  
+  .testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .testimonio-info {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .testimonio-info p {
+    margin-bottom: 0;
+  }
+  
+  .testimonio-footer .cliente {
+    font-size: 1.2rem;
+  }
+  
+  .testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+  }
+
+  /* Contacto */
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+  }
+  
+  .contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+  }
+  
+  .contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover i {
+    color: black;
+  }
+  
+
+  
+  
+  /* Pie de pagina (footer) */
+
+footer {
+    min-height: 500px;
+    background-color: #656060;
+  }
+  
+  .footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid rgb(226, 22, 22);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+  }
+  
+  .iconos-redes-sociales a:hover i {
+    color: black;
+  }
+  
+  .derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+  }
+  
