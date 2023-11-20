@@ -1,9 +1,5 @@
 /*Body*/
-*{
-  margin: 0;
-  padding: 0;
-  /*box-sizing: border-box;*/
-}
+
 /*Navbar*/
 .navbar{
   padding: 5px;
@@ -295,10 +291,10 @@
 }
 /*====================================*/
 /*Equipo de trabajo*/
-.equipotrabajo{
+/*.equipotrabajo{
   padding: 50PX;
   bottom: 40px;
-}
+}*/
 
 .imagen-circular {
   width: 150px; /* Ajusta el ancho según tus preferencias */
@@ -306,17 +302,31 @@
   border-radius: 50%; /* Esto hace que el borde sea circular */
   object-fit: cover; /* Para mantener la imagen proporcional y llenar el círculo */
 }
+.col-12.col-md-6.align-items-center h2.fw-normal {
+  color: white;
+}
 
-.seccion-diagonal {
+.col-12.col-md-6.align-items-center p {
+  text-align: left;
+  color: white;
+  width: 500px;
+
+}
+.col-12.col-md-6.align-items-center{
+  text-align: center;
+  background-color: #5858fa;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+/*.seccion-diagonal {
   background: linear-gradient(to top right, rgb(14, 199, 245) 0%, rgb(241, 12, 34) 100%);
   padding: 30px; /* Puedes ajustar esto según tus necesidades */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 10); 
-}
+  /*box-shadow: 0 5px 15px rgba(0, 0, 0, 10); 
+}*/
+
 /*=================================================*/
 
   /* Contacto */
-
-  
   .contacto .rectangulo {
     margin-top: 5rem;
     background-color: rgb(13, 110, 253);
@@ -360,59 +370,12 @@
   .contacto button:hover i {
     color: black;
   }
-  
-  
-  /* Pie de pagina (footer) */
 
-footer {
-    min-height: 500px;
-    background-color: #656060;
-  }
+/*Footer*/
+
+footer{
+  padding: 300px 0 0px;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  border-top-left-radius: 125px;
   
-  .footer-logo {
-    height: 80px;
-    width: 80px;
-    margin: 10px;
-  }
-  
-  .footer-texto {
-    font-size: 1.5rem;
-    padding: 20px;
-    margin-bottom: 30px;
-    font-family: 'Quicksand', sans-serif;
-  }
-  
-  .iconos-redes-sociales a {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    margin: 10px;
-    border: 2px solid rgb(226, 22, 22);
-    border-radius: 50%;
-    transition: all 0.2s ease-in;
-  }
-  
-  .iconos-redes-sociales i {
-    color: white;
-    font-size: 1.5rem;
-    transition: all 0.2s ease-in;
-  }
-  
-  .iconos-redes-sociales a:hover {
-    background-color: white;
-    border: 2px solid rgb(13, 110, 253);
-  }
-  
-  .iconos-redes-sociales a:hover i {
-    color: black;
-  }
-  
-  .derechos-de-autor {
-    font-size: 15px;
-    color: #aeaeae;
-    padding: 20px;
-  }
-  
+}

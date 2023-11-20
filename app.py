@@ -3,15 +3,11 @@ from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 import os
 
-
-
 # Crear una instancia de la aplicación Flask sqlite:///database/data_form1.sqlite3--sqlite:database/data_form1.sqlite3
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
 app.static_folder = 'static'
 
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database/data_form1.sqlite3'
-#db = SQLAlchemy(app)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'database/data_form1.sqlite3')
@@ -66,12 +62,6 @@ def propuesta3():
 #=========================
 #base de datos 
 
-#@app.route('/create_db', methods=['POST'])
-#def create():
-#    data_save1 = data_save(nombre=request.fomr['nombre'])
-#    db.session.add
-#    db.session.commit()
-
 @app.route("/create_db", methods=["POST"])
 def create_db():
     try:
@@ -92,7 +82,6 @@ def create_db():
     except Exception as e:
         # Maneja cualquier error, por ejemplo, si no se pueden guardar los datos
         return f"Error: {str(e)}"
-
 
 
 if __name__ == '__main__':

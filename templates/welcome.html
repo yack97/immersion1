@@ -59,7 +59,9 @@
               </p>
               <div class="badges-contenedor">
                 <!--<button  href="/propuesta1/" type="button" class="btn btn-primary btn-sm">Saber más...</button>-->
-                <a href="/propuesta1" class="btn" role="button" >Toggle link</a>
+                <!--<a href="/propuesta1" class="btn" role="button" >Toggle link</a>-->
+                <a  href="/propuesta1" type="button" class="btn btn-primary btn-sm">Saber más...</a>
+
 
               </div>
             </div>
@@ -191,11 +193,11 @@
             <div class="col-12 col-md-6 containform">
               <form action="/create_db" method="POST">
                 <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre...</label>
+                  <label for="nombre" class="form-label">Nombre y Apellido:*</label>
                   <input class="form-control" name="nombre" required>
                 </div>
                 <div class="mb-3">
-                  <label for="telefono" class="form-label">Teléfono...</label>
+                  <label for="telefono" class="form-label">Teléfono:*</label>
                   <input class="form-control" name="telefono" required>
                 </div>
                 <div class="mb-3">
@@ -203,11 +205,11 @@
                   <input class="form-control" name="link">
                 </div>
                 <div class="mb-1">
-                  <label for="empresa" class="form-label">Nombre de la empresa..</label>
+                  <label for="empresa" class="form-label">Nombre de la empresa:*</label>
                   <input class="form-control" name="nombre_empresa" required>
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email...</label>
+                  <label for="email" class="form-label">Email:*</label>
                   <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
                 </div>
                 <div class="mb-3">
@@ -227,31 +229,48 @@
       <!--equipo de trabajo-->
       <section class="equipotrabajo seccion-diagonal">
         <div class="container seccion-clara">
-          <div class="row">
-            <div class="col-16 col-md-6  align-items-center">
-              <img src="static/img/portada1.png" class="imagen-circular" alt="Descripción de la imagen">
-              <h2 class="fw-normal">Moises</h2>
-              <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            <div class="row">
+                <div class="col-12 col-md-6  align-items-center">
+                    <img src="static/img/portada1.png" class="imagen-circular" alt="Descripción de la imagen">
+                    <h2 class="fw-normal">Moises Cedeño</h2>
+                    <p>
+                        espcialista en Marketing 
+                        digital y posicionameinto 
+                        Web.
+                    </p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div>    
+                <div class="col-12 col-md-6  align-items-center">
+                    <img src="static/img/imagencarousel2.jpeg" class="imagen-circular" alt="Descripción de la imagen">
+                    <h2 class="fw-normal">Yadir Acuña</h2>
+                    <p>
+                      Apasionado por optimizar procesos, 
+                      tengo sólidos conocimientos en ETL, 
+                      exploración de datos y desarrollo web. 
+                      Mi experiencia abarca desde la eficiente automatización 
+                      de procesos hasta la implementación exitosa de Google Cloud Platform. 
+                      Destaco por mi enfoque estratégico, 
+                      convirtiendo datos en insights accionables para impulsar 
+                      el crecimiento empresarial. Listo para aportar soluciones 
+                      innovadoras a su equipo y llevar la toma de decisiones al 
+                      siguiente nivel.
+                    </p>
+                    <p><a class="btn btn-secondary" href="https://ar.linkedin.com/in/yadir-acuna-pinzon?trk=profile-badge">View details &raquo;</a></p>
+                </div>
+              
             </div>
-            <div class="col-16 col-md-6  align-items-center">
-              <img src="static/img/portada1.png" class="imagen-circular " alt="Descripción de la imagen">
-              <h2 class="fw-normal">Yadir Acuña</h2>
-              <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
+    
         <!-- Contacto -->
         <section id="contacto" class="contacto seccion-oscura">
           <div class="container">
             <div class="container text-center rectangulo d-flex justify-content-evenly">
               <div class="row">
-                <div class="col-12 col-md-6 seccion-titulo">
+                <div class="col-12 col-md-4 seccion-titulo">
                   ¡Hablemos!
                 </div>
-                <div class="col-12 col-md-6 descripcion">
+                <div class="col-12 col-md-4 descripcion">
                   Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
                 </div>
                 <div class="col-12 col-md-4">
