@@ -50,53 +50,77 @@ body {
 }
 /*===================================*/
 /*H1 frase*/
+.fraseprincipalcolor .containerFrase{
+  background-color: #3498db; /* Cambia este valor al color que desees */
+  color: #ffffff; /* Cambia este valor al color del texto que desees */
+  padding: 7rem; /* Ajusta este valor según tus necesidades para agregar espacio interno */
+  border-radius: 0 0 15% 15%; /* Borde redondeado solo en las esquinas inferiores */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+
+}
+
 
 .frase h1 {
-  margin-top: 60px;
+  margin-top: 0.6rem;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-weight: bold;
   text-shadow: 0 0 3px #aaa7a7;
-  color: hsl(0, 100%, 100%);
+  color: hsl(0, 67%, 1%);
 }
 
 /*======================================*/
 /*Propuestas*/
 .experiencia {
-    padding: 40px 40px 80px 40px;
+    padding: 10px 10px 60px 10px;
   }
   
-  .experiencia .columna {
-    background-color: #ffffff;
-    padding: 20px;
-    border: 2px solid #ffffff;
+ .experiencia .columna {
+    background-color: #dbf5fe;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     transition: all 0.2s ease-in;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 3); /* Ajusta los valores según tus preferencias */
-  }
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
+    height: 100%; /* Utiliza el 100% del alto del contenedor padre */
+
+    /* Utiliza el 90% del ancho del contenedor padre, con un máximo de 500px */
+    width: 90%;
+    max-width: 500px;
+    padding: 20px; /* Ajusta el valor según la cantidad de espacio que deseas en los bordes */
+    margin-top: -5rem;
+
+}
+.experiencia .columna img {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tus preferencias */
+  transition: transform 0.3s; /* Agrega una transición suave */
+}
+
+.experiencia .columna:hover img {
+  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+}
   
-  .experiencia .columna:hover {
-    color: rgb(253, 250, 250);
-    background-color: #4a2b87;
-  }
+.experiencia .columna:hover {
+  color: rgb(253, 250, 250);
+  background-color: #4a2b87;
+}
   
-  .experiencia i {
-    font-size: 2.5rem;
-    color: #fffefe;
-    background-color: #f4f4f8;
-    padding: 8px 19px;
-    border-radius: 50%;
-  }
+.experiencia i {
+  font-size: 2.5rem;
+  color: #fffefe;
+  background-color: #f4f4f8;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
   
-  .experiencia-titulo {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
+.experiencia-titulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
 
 /*============================================================*/
 /*imagen transicion mision y vision*/
@@ -121,29 +145,45 @@ body {
 }
 
 .imagen {
-  width: 50vh; /* Ancho de 200 píxeles */
-  height: 50vh; /* Alto de 150 píxeles */
+  width: 50vh; /* Ancho de 50% del viewport height */
+  height: 50vh; /* Alto de 50% del viewport height */
 }
+
 .imagen-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%; /* Para ocupar toda la altura del contenedor */
 }
+
 /* Estilo base de la imagen */
 .imagen-container .imagen {
-  transition: transform 0.3s; /* Agrega una transición suave */
+  transition: transform 0.30s; /* Agrega una transición suave */
 }
 
 /* Estilo de la imagen cuando se haga hover (cursor sobre la imagen) */
 .imagen-container:hover .imagen {
-  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+  animation: mover 2s infinite; /* Agrega una animación de movimiento */
 }
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%); /* Mueve la imagen a la mitad del contenedor */
+  }
+  100% {
+    transform: translateX(0); /* Vuelve la imagen a su posición original */
+  }
+}
+
+/*=============================*/
 /*estilo separacion*/
 
 .informeMision {
   position: relative;
-  background-color: #3498db; /* Color de fondo de la sección */
+  background: linear-gradient(to right, #42dcfb, #0e43e0);
   padding: 20px 0;
 }
 
@@ -163,23 +203,40 @@ body {
 .informeMision::after {
   bottom: 0.6;
 }
-/*COMO PODEMOS AYUDAR*/
 
+/*===============================*/
+/*Letras  mision y vision*/
+.informeMision h1{
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+.informeMision h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+.informeMision p {
+  font-family: Arial, sans-serif;
+}
+
+/*COMO PODEMOS AYUDAR*/
 .ofrecemos {
   padding: 40px;
 }
 
-.btn-2{
+.btn-2 {
+  position: relative;
   text-align: center;
-  border-radius: 40px;    
-  box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 10 rgba(39, 200, 255, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, background-color 0.3s ease;
   overflow: hidden;
   background-color: #04f6fe;
-
+  padding: 20px 40px;
+  width: 100%;
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.1);
+  border: 2px solid #000000;
 }
 
-.btn-2::after, .btn-2::before{
+.btn-2::after,
+.btn-2::before {
   content: "";
   position: absolute;
   opacity: 0.3;
@@ -190,44 +247,53 @@ body {
   left: 0;
   bottom: 0;
   z-index: -1;
-  transition: transform 0.3s ease;
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.1);
+  border: 2px solid #000000;
 }
 
-.btn-2:hover{
-  transform: translate(-12px, -12px);
+.btn-2:hover {
+  transform: translate(-5px, -5px) scale(1.1);
+  box-shadow: 0 9px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid #0af3cc;
 }
 
-.btn-2:hover::after{
-  transform: translate(6px, 6px);
+.btn-2:hover::after {
+  transform: translate(5px, 5px);
 }
 
-.btn-2:hover::before{
-  transform: translate(12px, 12px);
+.btn-2:hover::before {
+  transform: translate(10px, 10px);
 }
 
 
+
+/* Ajustar la altura del colapso en función de la altura del contenido */
+
+
+/*como podemos ayuar mensaje en nube */
 .containerFRS {
   text-align: center;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   font-family: 'Times New Roman', serif;
   padding: 10px 60px 20px 60px;
-  clip-path: polygon(0 0, 100% 0%, 100% 75%, 95% 78%, 89% 100%, 93% 75%, 0% 75%);
-
-  animation: fondoColor 2s infinite;
+  position: relative;
+  background-color: #04f6fe;
+  border-radius: 9px; /* Borde redondeado solo en las esquinas superiores */
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 52% 78%, 52% 100%, 51% 77%, 0 75%);
+  animation: fondoColor 10s infinite;
 }
 
 @keyframes fondoColor {
   0% {
-    background-color: #4b91f4; /* Comienza con el color original */
+    background-color: #04f6fe;
   }
   100% {
-    background-color: rgb(9, 158, 46); /* Termina con el color rojo */
-    clip-path: polygon(0 0, 100% 0%, 100% 75%, 95% 78%, 89% 100%, 93% 75%, 0% 75%);
-
-      }
-
+    background-color: #cd91f7;
+  }
 }
+
+
 /*===========================================================*/
 /*formulario*/
 /*.formulario1 {

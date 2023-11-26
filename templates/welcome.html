@@ -38,19 +38,21 @@
       </div>
       <section>
       <!--Frase principal-->
-      <section >
-        <div class="frase">
-          <h1>"Cada dato tiene una historia que contar. ¿Estás listo para ser el narrador que transforma números en soluciones?"</h1>
+      <section class="fraseprincipalcolor">
+        <div class="containerFrase">
+          <div class="frase">
+            <h1>"Cada dato tiene una historia que contar. ¿Estás listo para ser el narrador que transforma números en soluciones?"</h1>
+          </div>
         </div>
       <section>
       <!--propuestas-->
-      <section class="experiencia seccion-oscura">
+      <section class="experiencia seccion-oscura ">
         <div class="container text-center">
-          <div class="row">
+          <div class="row "> 
             <!-- Plan A -->
-            <div class="columna col-12 col-md-4">
-              <img src="static/img/Designerprueba1.1.png" class="d-block w-100" alt="...">
-              <p class="experiencia-titulo">Paquete Básico: "Inicio Brillante"</p>
+            <div class="columna col-10 col-md-4 mx-auto ">
+              <img src="static/img/Designerprueba1.1.png" class="img-fluid rounded-circle " style="width: 300px;" alt="propuesta1.1.1">
+              <p class="experiencia-titulo">"Inicio Brillante"</p>
               <p>¡Comienza tu viaje hacia el éxito en línea con nuestro Paquete Básico! 
                 Este paquete es ideal para aquellos que buscan una sólida presencia en Internet. 
                 Ofrecemos estrategias de marketing digital efectivas, un sitio web atractivo
@@ -58,30 +60,13 @@
                 para descubrir cómo podemos ayudarte a dar los primeros pasos hacia tus objetivos.
               </p>
               <div class="badges-contenedor">
-                <!--<button  href="/propuesta1/" type="button" class="btn btn-primary btn-sm">Saber más...</button>-->
-                <!--<a href="/propuesta1" class="btn" role="button" >Toggle link</a>-->
                 <a  href="/propuesta1" type="button" class="btn btn-primary btn-sm">Saber más...</a>
-
-
               </div>
             </div>
             <!-- Plan B -->
-            <div class="columna col-12 col-md-4">
-              <img src="static/img/Designerprueba1.1.png" class="d-block w-100" alt="...">
-              <p class="experiencia-titulo">Paquete Intermedio: "Ascenso Destacado"</p>
-              <p>Optimiza tu presencia en línea con nuestro Paquete Intermedio. 
-                Con un enfoque más completo, te ofrecemos estrategias de marketing digital más avanzadas,
-                un sitio web aún más funcional y un análisis de datos más detallado. 
-                Este paquete es perfecto para aquellos que desean crecer y destacarse en línea. 
-                Haz clic en "Saber más" para explorar cómo podemos llevarte al siguiente nivel.</p>
-              <div class="badges-contenedor">
-                <a  href="/propuesta2" type="button" class="btn btn-primary btn-sm">Saber más...</a>
-              </div>
-            </div>
-            <!-- Plan C -->
-            <div class="columna col-12 col-md-4">
-              <img src="static/img/Designerprueba1.1.png" class="d-block w-100" alt="...">
-              <p class="experiencia-titulo">Paquete Avanzado: "Experiencia de Éxito"</p>
+            <div class="columna col-10 col-md-4 mx-auto ">
+              <img src="static/img/Designerprueba1.1.png" class="img-fluid rounded-circle"  style="width: 300px;" alt="propuesta2.2.2">
+              <p class="experiencia-titulo">"Experiencia de Éxito"</p>
               <p>Alcanza la excelencia en línea con nuestro Paquete Avanzado. 
                 Este paquete es la opción más completa para aquellos que buscan un impacto significativo.
                 Obtén estrategias de marketing digital de primer nivel, 
@@ -121,202 +106,123 @@
             </div>
           </div>
         </section>
+
+
         <!--Que ofrecemos-->
+
         <section class="ofrecemos seccion-clara">
           <div class="container">
             <div class="row">
               <div class="col-sm-12 p-3 mb-4">
                 <div class="containerFRS">
-                  <h2>como podemos ayudarte</h2>
+                  <h2>Como podemos ayudarte</h2>
                 </div>
-              </div>          
+              </div> 
+            </div>
+        
+            <!-- Columna de los botones -->
             <div class="row">
-              <div class=" col-md-4 mb-4">
-                <div class="btn-2" type="button" data-bs-toggle="collapse" data-bs-target="#colapse1" aria-expanded="false" aria-controls="collapseWidthExample">
-                    <h2>Posicionamiento </h2>
-                    <h2>en redes sociales</h2>
-                </div>
-                    <div style="min-height: 120px;">
-                      <div class="collapse collapse-horizontal" id="colapse1">
-                        <div class="card card-body" style="width: 1200px;">
-                          <!--Formulario-->
-                          <section id="formulario1" class="formulario1 seccion-clara">
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-12 col-md-6 texts">
-                                  <div class="secciondin">
-                                    <h2 class="name item1">Quieres que te contactemos?</h2>
-                                    <!--<h3 class="paragraph item1">La atención más personalizada a todos tus problemas</h3>-->
-                                  </div>
-                                  <div class="imagen-container1 align-item-center">
-                                    <img src="static/img/contactar.svg" class="imagen">
-                                  </div>
-                                </div>
-                                <div class="col-12 col-md-6 containform">
-                                  <form action="/create_db" method="POST">
-                                    <div class="mb-3">
-                                      <label for="nombre" class="form-label">Nombre...</label>
-                                      <input class="form-control" name="nombre" required>
-                                    </div>
-                                    <div class="mb-3">
-                                      <label for="telefono" class="form-label">Teléfono...</label>
-                                      <input class="form-control" name="telefono" required>
-                                    </div>
-                                    <div class="mb-3">
-                                      <label for="link" class="form-label">Link...</label>
-                                      <input class="form-control" name="link">
-                                    </div>
-                                    <div class="mb-1">
-                                      <label for="empresa" class="form-label">Nombre de la empresa..</label>
-                                      <input class="form-control" name="nombre_empresa" required>
-                                    </div>
-                                    <div class="mb-3">
-                                      <label for="email" class="form-label">Email...</label>
-                                      <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
-                                    </div>
-                                    <div class="mb-3">
-                                      <label for="observaciones" class="form-label">Observaciones...</label>
-                                      <textarea class="form-control" name="observaciones" id="observaciones" rows="6"></textarea>
-                                    </div>
-                                    <div class="d-flex justify-content-end">
-                                      <button type="submit" class="btn btn-success d-md-flex">Enviar</button>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </section>
-                        </div>
-                      </div>
-                    </div>
+              <div class="col-md-4">
+                <button class="btn btn-2" type="button" onclick="toggleCard('collapse1')" > 
+                  Posicionamiento
+                  SEO y SEM en Google
+                </button>
               </div>
-              
-              <!--trabajo con botones 2 -->
-              <div class="col-12 col-md-4 mb-4">
-                <div class="btn-2" type="button" data-bs-toggle="collapse" data-bs-target="#colapse2" aria-expanded="false" aria-controls="collapseWidthExample">
-                  <h2>Posicionamiento </h2>
-                    <h2>SEO y SEM en Google</h2>
-                </div>
-                <div style="min-height: 120px;">
-                  <div class="collapse collapse-horizontal" id="colapse2">
-                    <div class="card card-body" style="width: 1200px;">
-                      <!--Formulario-->
-                      <section id="formulario1" class="formulario1 seccion-clara">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-12 col-md-6 texts">
-                              <div class="secciondin">
-                                <h2 class="name item1">Quieres que te contactemos?</h2>
-                                <!--<h3 class="paragraph item1">La atención más personalizada a todos tus problemas</h3>-->
-                              </div>
-                              <div class="imagen-container1 align-item-center">
-                                <img src="static/img/contactar.svg" class="imagen">
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-6 containform">
-                              <form action="/create_db" method="POST">
-                                <div class="mb-3">
-                                  <label for="nombre" class="form-label">Nombre...</label>
-                                  <input class="form-control" name="nombre" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="telefono" class="form-label">Teléfono...</label>
-                                  <input class="form-control" name="telefono" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="link" class="form-label">Link...</label>
-                                  <input class="form-control" name="link">
-                                </div>
-                                <div class="mb-1">
-                                  <label for="empresa" class="form-label">Nombre de la empresa..</label>
-                                  <input class="form-control" name="nombre_empresa" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="email" class="form-label">Email...</label>
-                                  <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="observaciones" class="form-label">Observaciones...</label>
-                                  <textarea class="form-control" name="observaciones" id="observaciones" rows="6"></textarea>
-                                </div>
-                                <div class="d-flex justify-content-end">
-                                  <button type="submit" class="btn btn-success d-md-flex">Enviar</button>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-md-4">
+                <button class="btn btn-2" type="button" onclick="toggleCard('collapse2')">
+                  Posicionamiento SEO y SEM en Google
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-2" type="button" onclick="toggleCard('collapse3')">
+                  Análisis de Datos para Estrategias Exitosas.
+                </button>
+              </div>
+            </div>
 
-              </div>
+            <br>
+        
+            <!-- Filas de las tarjetas -->
+            <div class="row">
+              <div class="collapse col-md-12" id="collapse1">
+                <div class="card card-body tarjeta">
+                  <object data="static/PDF/Audi A8.pdf" type="application/pdf" width="100%" height="500px">
 
-              <!--trabjo con botones 3-->
-              <div class="col-12 col-md-4 mb-4">
-                <div class="btn-2" type="button" data-bs-toggle="collapse" data-bs-target="#colapse3" aria-expanded="false" aria-controls="collapseWidthExample">
-                  <h2>Análisis de Datos para Estrategias Exitosas. </h2>
-                    <!--<h3>Transforma Datos en Estrategias Ganadoras</h3>-->
-                </div>
-                <div style="min-height: 120px;">
-                  <div class="collapse collapse-horizontal" id="colpse3">
-                    <div class="card card-body" style="width: 1200px;">
-                      <!--Formulario-->
-                      <section id="formulario1" class="formulario1 seccion-clara">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-12 col-md-6 texts">
-                              <div class="secciondin">
-                                <h2 class="name item1">Quieres que te contactemos?</h2>
-                                <!--<h3 class="paragraph item1">La atención más personalizada a todos tus problemas</h3>-->
-                              </div>
-                              <div class="imagen-container1 align-item-center">
-                                <img src="static/img/contactar.svg" class="imagen">
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-6 containform">
-                              <form action="/create_db" method="POST">
-                                <div class="mb-3">
-                                  <label for="nombre" class="form-label">Nombre...</label>
-                                  <input class="form-control" name="nombre" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="telefono" class="form-label">Teléfono...</label>
-                                  <input class="form-control" name="telefono" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="link" class="form-label">Link...</label>
-                                  <input class="form-control" name="link">
-                                </div>
-                                <div class="mb-1">
-                                  <label for="empresa" class="form-label">Nombre de la empresa..</label>
-                                  <input class="form-control" name="nombre_empresa" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="email" class="form-label">Email...</label>
-                                  <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="observaciones" class="form-label">Observaciones...</label>
-                                  <textarea class="form-control" name="observaciones" id="observaciones" rows="6"></textarea>
-                                </div>
-                                <div class="d-flex justify-content-end">
-                                  <button type="submit" class="btn btn-success d-md-flex">Enviar</button>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    </div>
-                  </div>
                 </div>
               </div>
-            </div>     
+        
+              <div class="collapse col-md-12" id="collapse2">
+                <div class="card card-body tarjeta">
+                  <h2>Información del botón 2</h2>
+                  <p>Este es el contenido del botón 2.</p>
+                </div>
+              </div>
+        
+              <div class="collapse col-md-12" id="collapse3">
+                <div class="card card-body tarjeta">
+                  <h2>Información del botón 3</h2>
+                  <p>Este es el contenido del botón 3.</p>
+                </div>
+              </div>
+            </div>
           </div>
-         </div>
-        </section> 
+
+          <!--Escript de despliegue-->
+          <!-- revisar espacion y info -->
+        
+          <script>
+            function toggleCard(collapseId) {
+              var targetCard = document.getElementById(collapseId);
+            
+              // Verifica si la tarjeta está actualmente visible
+              var isVisible = targetCard && targetCard.classList.contains('show');
+            
+              // Oculta todas las tarjetas
+              document.querySelectorAll('.collapse').forEach(function (card) {
+                card.classList.remove('show');
+              });
+            
+              // Si la tarjeta no estaba visible, la muestra
+              if (targetCard && !isVisible) {
+                targetCard.classList.add('show');
+              }
+            }
+            
+            // Cerrar la tarjeta al hacer clic fuera de los botones o la información
+            window.addEventListener('click', function (event) {
+              var isButton = event.target.closest('.btn');
+              var isCard = event.target.closest('.collapse');
+            
+              if (!isButton && !isCard) {
+                document.querySelectorAll('.collapse').forEach(function (card) {
+                  card.classList.remove('show');
+                });
+              }
+            });
+
+            //funcion pdf
+
+
+            function openPDF(pdfUrl) {
+              var pdfElement = document.createElement("iframe");
+              pdfElement.src = pdfUrl;
+              pdfElement.width = "100%";
+              pdfElement.height = "100%";
+              var cardBody = document.querySelector(".collapse.show .card-body");
+              cardBody.appendChild(pdfElement);
+            }
+            
+            document.querySelectorAll(".btn-2").forEach(function(button) {
+              button.addEventListener("click", function() {
+                var pdfUrl = button.dataset.pdfUrl;
+                openPDF(pdfUrl);
+              });
+            });
+            
+            
+          </script>
+        </section>
+  
         
       <!--Formulario-->
       <section id="formulario1" class="formulario1 seccion-clara">
@@ -371,7 +277,7 @@
       <section class="equipotrabajo seccion-diagonal">
         <div class="container seccion-clara">
             <div class="row">
-                <div class="col-12 col-md-6  align-items-center">
+                <div class="col-12 col-md-4  align-items-center">
                     <img src="static/img/portada1.png" class="imagen-circular" alt="Descripción de la imagen">
                     <h2 class="fw-normal">Moises Cedeño</h2>
                     <p>
@@ -381,7 +287,7 @@
                     </p>
                     <p><a class="btn btn-secondary" href="https://ar.linkedin.com/in/mois%C3%A9s-cede%C3%B1o-g%C3%B3mez-41a0a1217?trk=profile-badge">View details &raquo;</a></p>
                 </div>    
-                <div class="col-12 col-md-6  align-items-center">
+                <div class="col-12 col-md-4  align-items-center">
                     <img src="static/img/imagencarousel2.jpeg" class="imagen-circular" alt="Descripción de la imagen">
                     <h2 class="fw-normal">Yadir Acuña</h2>
                     <p>

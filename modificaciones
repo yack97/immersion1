@@ -20,3 +20,14 @@
 
 4)body degradado
 
+# Asegúrate de estar en la rama que deseas subir
+git status
+
+# Prepara los cambios que deseas subir
+git add .
+
+# Confirma los cambios que deseas subir
+git commit -m "actualizacion de colores y botones en ofrecimiento"
+
+# Sube los cambios a tu repositorio remoto
+git push
