@@ -109,7 +109,6 @@
 
 
         <!--Que ofrecemos-->
-
         <section class="ofrecemos seccion-clara">
           <div class="container">
             <div class="row">
@@ -117,15 +116,14 @@
                 <div class="containerFRS">
                   <h2>Como podemos ayudarte</h2>
                 </div>
-              </div> 
+              </div>
             </div>
         
             <!-- Columna de los botones -->
             <div class="row">
               <div class="col-md-4">
-                <button class="btn btn-2" type="button" onclick="toggleCard('collapse1')" > 
-                  Posicionamiento
-                  SEO y SEM en Google
+                <button class="btn btn-2" type="button" onclick="toggleCard('collapse1')">
+                  Posicionamiento SEO y SEM en Google
                 </button>
               </div>
               <div class="col-md-4">
@@ -139,89 +137,145 @@
                 </button>
               </div>
             </div>
-
+        
             <br>
         
             <!-- Filas de las tarjetas -->
             <div class="row">
               <div class="collapse col-md-12" id="collapse1">
-                <div class="card card-body tarjeta">
-                  <object data="static/PDF/Audi A8.pdf" type="application/pdf" width="100%" height="500px">
 
+                <div class="card card-body tarjeta">
+                  <div id="carouselContainer1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <video id="videoAutoplay" class="embed-responsive-item" controls autoplay>
+                            <source src="static/videos/redes3.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                          </video>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="static/img/ImagenPortada1.jpeg" class="d-block w-100 img-fluid" alt="Segunda imagen">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="static/img/imagencarousel2.jpeg" class="d-block w-100 img-fluid" alt="Tercera imagen">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselContainer1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselContainer1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                 </div>
               </div>
         
               <div class="collapse col-md-12" id="collapse2">
                 <div class="card card-body tarjeta">
-                  <h2>Información del botón 2</h2>
-                  <p>Este es el contenido del botón 2.</p>
+                  <div id="carouselContainer2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <video id="videoAutoplay2" class="embed-responsive-item" controls autoplay>
+                            <source src="static/videos/redes3.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                          </video>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="static/img/ImagenPortada1.jpeg" class="d-block w-100 img-fluid" alt="Segunda imagen">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="static/img/imagencarousel2.jpeg" class="d-block w-100 img-fluid" alt="Tercera imagen">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselContainer2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselContainer2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  
                 </div>
               </div>
         
               <div class="collapse col-md-12" id="collapse3">
                 <div class="card card-body tarjeta">
-                  <h2>Información del botón 3</h2>
-                  <p>Este es el contenido del botón 3.</p>
+                  <div id="carouselContainer3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <video id="videoAutoplay3" class="embed-responsive-item" controls autoplay>
+                            <source src="static/videos/redes3.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                          </video>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="static/img/ImagenPortada1.jpeg" class="d-block w-100 img-fluid" alt="Segunda imagen">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="static/img/imagencarousel2.jpeg" class="d-block w-100 img-fluid" alt="Tercera imagen">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselContainer3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselContainer3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!--Escript de despliegue-->
-          <!-- revisar espacion y info -->
         
+          <!-- Script de despliegue -->
           <script>
             function toggleCard(collapseId) {
               var targetCard = document.getElementById(collapseId);
-            
+        
               // Verifica si la tarjeta está actualmente visible
               var isVisible = targetCard && targetCard.classList.contains('show');
-            
+        
               // Oculta todas las tarjetas
               document.querySelectorAll('.collapse').forEach(function (card) {
                 card.classList.remove('show');
               });
-            
+        
               // Si la tarjeta no estaba visible, la muestra
               if (targetCard && !isVisible) {
                 targetCard.classList.add('show');
               }
             }
-            
+        
             // Cerrar la tarjeta al hacer clic fuera de los botones o la información
             window.addEventListener('click', function (event) {
               var isButton = event.target.closest('.btn');
               var isCard = event.target.closest('.collapse');
-            
+        
               if (!isButton && !isCard) {
                 document.querySelectorAll('.collapse').forEach(function (card) {
                   card.classList.remove('show');
                 });
               }
             });
-
-            //funcion pdf
-
-
-            function openPDF(pdfUrl) {
-              var pdfElement = document.createElement("iframe");
-              pdfElement.src = pdfUrl;
-              pdfElement.width = "100%";
-              pdfElement.height = "100%";
-              var cardBody = document.querySelector(".collapse.show .card-body");
-              cardBody.appendChild(pdfElement);
-            }
-            
-            document.querySelectorAll(".btn-2").forEach(function(button) {
-              button.addEventListener("click", function() {
-                var pdfUrl = button.dataset.pdfUrl;
-                openPDF(pdfUrl);
-              });
-            });
-            
-            
           </script>
         </section>
+        
+        
+        
+        
+
   
         
       <!--Formulario-->
@@ -334,6 +388,7 @@
         </section>
         <!--Footer-->
       {% include 'footer.html' %} <!-- Incluye el encabezado -->
+
       <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </body>
 </html>

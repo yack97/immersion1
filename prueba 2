@@ -275,3 +275,203 @@
   
   /*pruebas =============*/
   
+
+  <!-- Plan B 
+  <div class="columna col-12 col-md-4">
+    <img src="static/img/Designerprueba1.1.png" class="d-block w-100" alt="...">
+    <p class="experiencia-titulo">Paquete Intermedio: "Ascenso Destacado"</p>
+    <p>Optimiza tu presencia en línea con nuestro Paquete Intermedio. 
+      Con un enfoque más completo, te ofrecemos estrategias de marketing digital más avanzadas,
+      un sitio web aún más funcional y un análisis de datos más detallado. 
+      Este paquete es perfecto para aquellos que desean crecer y destacarse en línea. 
+      Haz clic en "Saber más" para explorar cómo podemos llevarte al siguiente nivel.</p>
+    <div class="badges-contenedor">
+      <a  href="/propuesta2" type="button" class="btn btn-primary btn-sm">Saber más...</a>
+    </div>
+  </div>-->
+
+  <div class=" col-md-4 mb-4">
+                <div class="btn-2" type="button" data-bs-toggle="collapse" data-bs-target="#colapse1" aria-expanded="false" aria-controls="collapseWidthExample">
+                    <h2>Posicionamiento </h2>
+                    <h2>en redes sociales</h2>
+                </div>
+                    <div style="min-height: 120px;">
+                      <div class="collapse collapse-horizontal" id="colapse1">
+                        <div class="card card-body" style="width: 1200px;">
+                          <!--Formulario-->
+                          <section id="formulario1" class="formulario1 seccion-clara">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-12 col-md-6 texts">
+                                  <div class="secciondin">
+                                    <h2 class="name item1">Quieres que te contactemos?</h2>
+                                    <!--<h3 class="paragraph item1">La atención más personalizada a todos tus problemas</h3>-->
+                                  </div>
+                                  <div class="imagen-container1 align-item-center">
+                                    <img src="static/img/contactar.svg" class="imagen">
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6 containform">
+                                  <form action="/create_db" method="POST">
+                                    <div class="mb-3">
+                                      <label for="nombre" class="form-label">Nombre...</label>
+                                      <input class="form-control" name="nombre" required>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="telefono" class="form-label">Teléfono...</label>
+                                      <input class="form-control" name="telefono" required>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="link" class="form-label">Link...</label>
+                                      <input class="form-control" name="link">
+                                    </div>
+                                    <div class="mb-1">
+                                      <label for="empresa" class="form-label">Nombre de la empresa..</label>
+                                      <input class="form-control" name="nombre_empresa" required>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="email" class="form-label">Email...</label>
+                                      <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="observaciones" class="form-label">Observaciones...</label>
+                                      <textarea class="form-control" name="observaciones" id="observaciones" rows="6"></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                      <button type="submit" class="btn btn-success d-md-flex">Enviar</button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              
+              <!--trabajo con botones 2 -->
+              <div class="col-12 col-md-4 mb-4">
+                <div class="btn-2" type="button" data-bs-toggle="collapse" data-bs-target="#colapse2" aria-expanded="false" aria-controls="collapseWidthExample">
+                  <h2>Posicionamiento </h2>
+                    <h2>SEO y SEM en Google</h2>
+                </div>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="colapse2">
+                    <div class="card card-body" style="width: 1200px;">
+                      <!--Formulario-->
+                      <section id="formulario1" class="formulario1 seccion-clara">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-12 col-md-6 texts">
+                              <div class="secciondin">
+                                <h2 class="name item1">Quieres que te contactemos?</h2>
+                                <!--<h3 class="paragraph item1">La atención más personalizada a todos tus problemas</h3>-->
+                              </div>
+                              <div class="imagen-container1 align-item-center">
+                                <img src="static/img/contactar.svg" class="imagen">
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6 containform">
+                              <form action="/create_db" method="POST">
+                                <div class="mb-3">
+                                  <label for="nombre" class="form-label">Nombre...</label>
+                                  <input class="form-control" name="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="telefono" class="form-label">Teléfono...</label>
+                                  <input class="form-control" name="telefono" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="link" class="form-label">Link...</label>
+                                  <input class="form-control" name="link">
+                                </div>
+                                <div class="mb-1">
+                                  <label for="empresa" class="form-label">Nombre de la empresa..</label>
+                                  <input class="form-control" name="nombre_empresa" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="email" class="form-label">Email...</label>
+                                  <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="observaciones" class="form-label">Observaciones...</label>
+                                  <textarea class="form-control" name="observaciones" id="observaciones" rows="6"></textarea>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                  <button type="submit" class="btn btn-success d-md-flex">Enviar</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!--trabjo con botones 3-->
+              <div class="col-12 col-md-4 mb-4">
+                <div class="btn-2" type="button" data-bs-toggle="collapse" data-bs-target="#colapse3" aria-expanded="false" aria-controls="collapseWidthExample">
+                  <h2>Análisis de Datos para Estrategias Exitosas. </h2>
+                    <!--<h3>Transforma Datos en Estrategias Ganadoras</h3>-->
+                </div>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="colapse3">
+                    <div class="card card-body" style="width: 1200px;">
+                      <!--Formulario-->
+                      <section id="formulario1" class="formulario1 seccion-clara">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-12 col-md-6 texts">
+                              <div class="secciondin">
+                                <h2 class="name item1">Quieres que te contactemos?</h2>
+                                <!--<h3 class="paragraph item1">La atención más personalizada a todos tus problemas</h3>-->
+                              </div>
+                              <div class="imagen-container1 align-item-center">
+                                <img src="static/img/contactar.svg" class="imagen">
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6 containform">
+                              <form action="/create_db" method="POST">
+                                <div class="mb-3">
+                                  <label for="nombre" class="form-label">Nombre...</label>
+                                  <input class="form-control" name="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="telefono" class="form-label">Teléfono...</label>
+                                  <input class="form-control" name="telefono" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="link" class="form-label">Link...</label>
+                                  <input class="form-control" name="link">
+                                </div>
+                                <div class="mb-1">
+                                  <label for="empresa" class="form-label">Nombre de la empresa..</label>
+                                  <input class="form-control" name="nombre_empresa" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="email" class="form-label">Email...</label>
+                                  <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="observaciones" class="form-label">Observaciones...</label>
+                                  <textarea class="form-control" name="observaciones" id="observaciones" rows="6"></textarea>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                  <button type="submit" class="btn btn-success d-md-flex">Enviar</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>
+         </div>

@@ -27,7 +27,7 @@ git status
 git add .
 
 # Confirma los cambios que deseas subir
-git commit -m "actualizacion de colores y botones en ofrecimiento"
+git commit -m "cambio de colores, funcionamietno, y presentacion pdf"
 
 # Sube los cambios a tu repositorio remoto
 git push
