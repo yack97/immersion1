@@ -379,28 +379,101 @@ body {
   bottom: 40px;
 }*/
 
-.imagen-circular {
-  width: 150px; /* Ajusta el ancho según tus preferencias */
-  height: 150px; /* Ajusta la altura según tus preferencias */
-  border-radius: 50%; /* Esto hace que el borde sea circular */
-  object-fit: cover; /* Para mantener la imagen proporcional y llenar el círculo */
-}
-.col-12.col-md-6.align-items-center h2.fw-normal {
-  color: white;
-}
-
-.col-12.col-md-6.align-items-center p {
-  text-align: left;
-  color: white;
+.contenedor {
+  position: relative;
   width: 500px;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid #462EA8;
+  border-radius: 40px;
+  background-color: #6B3A9E; /* Cambia el color del fondo del contenedor según tus preferencias */
+
 
 }
-.col-12.col-md-6.align-items-center{
-  text-align: center;
-  background-color: #5858fa;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+/* Estilo para la imagen en el cuadro */
+.imagen {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out, z-index 0s linear 0.3s;
+  z-index: 1; /* Inicialmente la imagen está por debajo de la barra */
+  border-radius: 40px;
 }
 
+/* Estilo para la barra inferior */
+.barra {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* 20% en la parte inferior para el botón */
+  background-color: rgba(6, 6, 6, 20); /* Opacidad solo en la barra */
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: height 0.3s ease-in-out, z-index 0s linear 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinea los elementos al final de la barra */
+  flex-direction: column; /* Alineación vertical de elementos */
+
+}
+
+.barra h1 {
+  margin: 0; /* Elimina el margen predeterminado del h1 */
+  font-size: 1em; /* Ajusta el tamaño del texto según sea necesario */
+  transition: margin-top 0.3s ease-in-out; /* Transición para el desplazamiento hacia la parte superior */
+  flex-grow: 1; /* Permite que el h1 ocupe todo el espacio disponible */
+  text-align: right; /* Alinea el texto a la derecha */
+  margin-top: 0; /* Margen superior inicial */
+  margin-right: 10px; /* Margen derecho para separar del borde del contenedor */
+}
+
+.texto-hover {
+  display: none; /* Inicialmente oculto */
+  color: #fff; /* Color del texto */
+}
+
+/* Mostrar el texto al posicionar el mouse sobre el contenedor */
+.contenedor:hover .barra .texto-hover {
+  display: block; /* Mostrar el texto */
+}
+
+/* Estilo para mostrar la barra y transformar la imagen al pasar el mouse sobre el cuadro */
+.contenedor:hover .barra {
+  transform: translateY(80%); /* Mueve la barra hacia arriba al hacer hover */
+  opacity: 1; /* Hace visible la barra */
+
+
+  height: 80%; /* 80% en la parte inferior para la barra */
+  z-index: -2; /* La barra debe estar por debajo de la imagen cuando se haga pequeña */
+  justify-content: flex-start; /* Alinea los elementos al principio (arriba) cuando el mouse está sobre el contenedor */
+  align-items: flex-end; /* Alinea los elementos en la parte superior de la barra */
+}
+
+.contenedor:hover .barra h1 {
+  margin-top: 10px; /* Ajusta el margen superior para separar del borde superior del contenedor */
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+.contenedor:hover .imagen {
+  width: 33.33%; /* Un tercio del cuadro en la parte superior */
+  z-index: 2; /* La imagen se superpondrá a la barra */
+}
+
+
+
+/* Estilo para el logo de LinkedIn */
+.linkedin-logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block; /*Siempre visible */
+  width: 30px; /* Ajusta el tamaño según sea necesario */
+  height: 30px;
+  margin-left: 10px; /* Espaciado entre el h1 y el logo */
+
+}
 /*.seccion-diagonal {
   background: linear-gradient(to top right, rgb(14, 199, 245) 0%, rgb(241, 12, 34) 100%);
   padding: 30px; /* Puedes ajustar esto según tus necesidades */
@@ -466,13 +539,4 @@ footer{
 /*primer experimento responsive*/
 
 
-.containerS .card {
-  width: 300px;
-  height: 300px;
-  background-color: #00093c;
-  border-radius: 32px;
-  padding: 10px; /* Changed padding from 3px to 10px for better spacing */
-  position: relative;
-  transition: 0.5s ease-in-out; /* Changed transition timing function */
-}
 
