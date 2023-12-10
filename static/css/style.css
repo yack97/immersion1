@@ -22,7 +22,8 @@ body {
 /*Navbar*/
 .navbar{
   padding: 0.5vw;
-  background-color: rgb(65, 29, 124);
+  /*background-color: rgb(65, 29, 124);*/
+  background-color: #462EA8;
 }
  
 .navbar-nav li a {
@@ -51,7 +52,7 @@ body {
 /*===================================*/
 /*H1 frase*/
 .fraseprincipalcolor .containerFrase{
-  background-color: #3813de; /* Cambia este valor al color que desees */
+  background: linear-gradient(to right, #54c6dd, #2e1a7f);
   color: #ffffff; /* Cambia este valor al color del texto que desees */
   padding: 7rem; /* Ajusta este valor según tus necesidades para agregar espacio interno */
   border-radius: 0 0 15% 15%; /* Borde redondeado solo en las esquinas inferiores */
@@ -76,7 +77,7 @@ body {
   }
   
  .experiencia .columna {
-    background-color: #dbf5fe;
+    background-color: #54bfd4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,7 +184,7 @@ body {
 
 .informeMision {
   position: relative;
-  background: linear-gradient(to right, #42dcfb, #0e43e0);
+  background: linear-gradient(to right, #42dcfb, #462EA8);
   padding: 20px 0;
 }
 
@@ -329,7 +330,7 @@ body {
 /*efecto transicion*/
 /* Estilo para elementos con la clase 'name' */
 .name {
-  background: linear-gradient(90deg, transparent 0%, violet 0%) no-repeat;
+  background: linear-gradient(90deg, transparent 0%, rgb(79, 46, 151) 0%) no-repeat;
   background-size: 200% 100%;
   color: black;
   animation: backgroundChange 3s infinite ;
@@ -457,11 +458,21 @@ body {
 
 footer{
   padding: 15rem 0 0rem;
-  background: linear-gradient(to right, #00093c, #2d0b00);
+  background: linear-gradient(to right, #0a0422, #462EA8);
   border-top-left-radius: 125px;
+
 }
 
 /*primer experimento responsive*/
 
 
+.containerS .card {
+  width: 300px;
+  height: 300px;
+  background-color: #00093c;
+  border-radius: 32px;
+  padding: 10px; /* Changed padding from 3px to 10px for better spacing */
+  position: relative;
+  transition: 0.5s ease-in-out; /* Changed transition timing function */
+}
 

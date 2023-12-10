@@ -58,6 +58,18 @@ def propuesta3():
 
 #========================
 
+@app.route('/boton1')
+def boton1():
+    return render_template('boton1.html')
+
+@app.route('/boton2')
+def boton2():
+    return render_template('boton2.html')
+
+@app.route('/boton3')
+def boton3():
+    return render_template('boton3.html')
+
 
 #=========================
 #base de datos 
