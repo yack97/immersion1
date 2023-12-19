@@ -379,6 +379,7 @@ body {
   bottom: 40px;
 }*/
 
+
 .contenedor {
   position: relative;
   width: 500px;
@@ -386,94 +387,90 @@ body {
   overflow: hidden;
   border: 1px solid #462EA8;
   border-radius: 40px;
-  background-color: #6B3A9E; /* Cambia el color del fondo del contenedor según tus preferencias */
-
-
+  background: linear-gradient(to right, #0a0422, #462EA8);
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Estilo para la imagen en el cuadro */
+.barra h1 {
+  margin: 5px 0 0;
+  font-size: 1em;
+  text-align: right;
+  transition: margin-top 0.3s ease-in-out;
+  flex-grow: 1;
+}
+
+.texto-hover-afectado {
+  display: none;
+  color: #fff;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(100%);
+  text-align: right;
+  margin-right: 0.01px;
+}
+
+.contenedor:hover .barra .texto-hover-afectado {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 10px;
+}
+
 .imagen {
   width: 100%;
   height: auto;
-  transition: transform 0.3s ease-in-out, z-index 0s linear 0.3s;
-  z-index: 1; /* Inicialmente la imagen está por debajo de la barra */
   border-radius: 40px;
+  position: relative;
+  z-index: 2; /* Asegura que la imagen esté por encima de la barra */
 }
 
-/* Estilo para la barra inferior */
 .barra {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 20%; /* 20% en la parte inferior para el botón */
-  background-color: rgba(6, 6, 6, 20); /* Opacidad solo en la barra */
+  height: 20%;
+  background-color: rgba(6, 6, 6, 0.2);
   color: #fff;
   padding: 10px;
   box-sizing: border-box;
-  transition: height 0.3s ease-in-out, z-index 0s linear 0.3s;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Alinea los elementos al final de la barra */
-  flex-direction: column; /* Alineación vertical de elementos */
-
+  justify-content: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1; /* Asegura que la barra esté por debajo de la imagen */
 }
 
-.barra h1 {
-  margin: 0; /* Elimina el margen predeterminado del h1 */
-  font-size: 1em; /* Ajusta el tamaño del texto según sea necesario */
-  transition: margin-top 0.3s ease-in-out; /* Transición para el desplazamiento hacia la parte superior */
-  flex-grow: 1; /* Permite que el h1 ocupe todo el espacio disponible */
-  text-align: right; /* Alinea el texto a la derecha */
-  margin-top: 0; /* Margen superior inicial */
-  margin-right: 10px; /* Margen derecho para separar del borde del contenedor */
-}
-
-.texto-hover {
-  display: none; /* Inicialmente oculto */
-  color: #fff; /* Color del texto */
-}
-
-/* Mostrar el texto al posicionar el mouse sobre el contenedor */
-.contenedor:hover .barra .texto-hover {
-  display: block; /* Mostrar el texto */
-}
-
-/* Estilo para mostrar la barra y transformar la imagen al pasar el mouse sobre el cuadro */
 .contenedor:hover .barra {
-  transform: translateY(80%); /* Mueve la barra hacia arriba al hacer hover */
-  opacity: 1; /* Hace visible la barra */
-
-
-  height: 80%; /* 80% en la parte inferior para la barra */
-  z-index: -2; /* La barra debe estar por debajo de la imagen cuando se haga pequeña */
-  justify-content: flex-start; /* Alinea los elementos al principio (arriba) cuando el mouse está sobre el contenedor */
-  align-items: flex-end; /* Alinea los elementos en la parte superior de la barra */
+  height: 80%;
 }
 
-.contenedor:hover .barra h1 {
-  margin-top: 10px; /* Ajusta el margen superior para separar del borde superior del contenedor */
-  text-align: right; /* Alinea el texto a la derecha */
-}
-
-.contenedor:hover .imagen {
-  width: 33.33%; /* Un tercio del cuadro en la parte superior */
-  z-index: 2; /* La imagen se superpondrá a la barra */
-}
-
-
-
-/* Estilo para el logo de LinkedIn */
 .linkedin-logo {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  display: block; /*Siempre visible */
-  width: 30px; /* Ajusta el tamaño según sea necesario */
-  height: 30px;
-  margin-left: 10px; /* Espaciado entre el h1 y el logo */
-
+  bottom: 10px;
+  right: 10px;
+  display: none; /* Inicialmente oculto */
+  z-index: 3; /* Asegura que el logo esté por encima de la imagen cuando no hay hover */
 }
+
+.contenedor:hover .linkedin-logo {
+  display: block; /* Mostrar el logo durante el hover */
+}
+
+.contenedor:hover .imagen,
+.contenedor:hover .barra h1 {
+  width: 33.33%;
+}
+
+
+
+
+
+
+
+
+  
 /*.seccion-diagonal {
   background: linear-gradient(to top right, rgb(14, 199, 245) 0%, rgb(241, 12, 34) 100%);
   padding: 30px; /* Puedes ajustar esto según tus necesidades */
