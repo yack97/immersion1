@@ -19,19 +19,35 @@
 }
 
 .frente1 {
-  /* Crea una perspectiva para la profundidad 3D */
-  background: linear-gradient(to right, #0a0422, #462ea8);
+  /* Establece la imagen de fondo y asegura que cubra toda la sección */
+  background-image: url('static/img/Posicionamiento1.jpeg');
+  background-size: cover;
+  background-position: center;
+  /* Establece otros estilos si lo necesitas, como altura, padding, etc. */
+}
+
+/* Estilo para el contenedor principal */
+.container-sectPrin {
+  /* Ajusta los estilos según tus necesidades */
+}
+
+/* Estilo para el texto dentro de la sección */
+.frente1 h1, .frente1 h3 {
+  /* Establece el color del texto para que sea legible en la imagen de fondo */
+  color: rgb(5, 5, 5); 
   text-align: center;
-  margin: 0 auto;
-}
-h1 {
-  color: #fefcfc;
   font-family: "Times New Roman", Times, serif;
+
+  /* Otros estilos según tus preferencias */
 }
-h3 {
-  color: #fefcfc;
-  font-family: "Times New Roman", Times, serif;
+
+
+.imagen {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  max-width: 35rem; /* Establece un ancho máximo de 500px */
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
 }
+
 
 /*Footer*/
 
