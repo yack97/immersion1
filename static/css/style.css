@@ -1,9 +1,4 @@
-/*Body
-body {
-  display: flex;
-  flex-direction: column;
-}*/
-/* revisar tema de body y que sea responsive */
+/* revisar tema de body y que sea responsive 
 body {
   margin: 0;
   padding: 0;
@@ -12,11 +7,10 @@ body {
   flex-direction: column;
 }
 @media only screen and (max-width: 767px) {
-  /* Estilos para dispositivos pequeños */
   .col-16 {
-    width: 100%; /* Ajusta el ancho según tus necesidades */
+    width: 100%; 
   }
-}
+}*/
 
 /*Navbar*/
 .navbar {

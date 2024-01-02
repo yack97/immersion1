@@ -1,111 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+  <!-- Metadatos del documento -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMMERSION</title><!--Arreglar titulo-->
-  <!-- boostrap -->
-  <link rel="stylesheet" href="static/css/bootstrap.min.css">  
-  <link rel="stylesheet" href="static/css/bootstrap.css">  
-  <link rel="stylesheet" href="static/css/style.css">  
+  
+  <!-- Título y descripción de la página -->
+  <title>IMMERSION: Posicionamiento Web SEO y SEM</title>
+  <meta name="description" content="IMMERSION es una empresa de servicios de posicionamiento web, SEO y SEM, desarrollo web y apps móviles, análisis de datos, optimización de procesos, diseño gráfico y web.">
+  
+  <!-- Enlaces a archivos CSS (Bootstrap y personalizado) -->
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
-      {% include 'header.html' %} <!-- Incluye el encabezado -->
-      <!--carousel-->
-      <section >
-      <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="static/img/portada.jpg" class="d-block w-100 img-fluid" alt="Primera imagen" >
-          </div>
-          <div class="carousel-item">
-            <img src="static/img/ImagenPortada1.jpeg" class="d-block w-100 img-fluid" alt="Segunda imagen">
-          </div>
-          <div class="carousel-item">
-            <img src="static/img/imagencarousel2.jpeg" class="d-block w-100 img-fluid" alt="Tercera imagen">
-          </div>
+  <!-- Inclusión del encabezado de la página -->
+  {% include 'header.html' %}
+
+  <!-- Sección del carrusel principal -->
+  <section>
+    <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+      <!-- Imágenes del carrusel -->
+      <div class="carousel-inner">
+        <!-- Primera imagen activa -->
+        <div class="carousel-item active">
+          <img src="static/img/portada.jpg" class="d-block w-100 img-fluid" alt="Posicionamiento web">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <!-- Segunda imagen -->
+        <div class="carousel-item">
+          <img src="static/img/ImagenPortada1.jpeg" class="d-block w-100 img-fluid" alt="¿Qué es SEO y SEM?">
+        </div>
+        <!-- Tercera imagen -->
+        <div class="carousel-item">
+          <img src="static/img/imagencarousel2.jpeg" class="d-block w-100 img-fluid" alt="Análisis de datos y desarrollo web">
+        </div>
       </div>
-      <section>
-      <!--Frase principal-->
-      <section class="fraseprincipalcolor">
-        <div class="containerFrase">
-          <div class="frase">
-            <h1>"Cada dato tiene una historia que contar. ¿Estás listo para ser el narrador que transforma números en soluciones?"</h1>
-          </div>
+      
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+<!-- Sección de la frase principal con fondo de color específico -->
+<section class="fraseprincipalcolor">
+  <!-- Contenedor principal para la frase -->
+  <div class="containerFrase">
+    
+    <!-- Contenido de la frase -->
+    <div class="frase">
+      <!-- Título principal o frase destacada -->
+      <h1>
+        "Cada dato tiene una historia que contar. En IMMERSION, ayudamos a las empresas a transformar datos en soluciones que les permitan tomar mejores decisiones y alcanzar sus objetivos."
+      </h1>
+    </div>
+    
+  </div> <!-- Fin del contenedor principal -->  
+</section> <!-- Fin de la sección de la frase principal -->
+
+    <!-- Sección de propuestas o planes de servicio -->
+<section class="experiencia seccion-oscura">
+  <!-- Contenedor principal -->
+  <div class="container text-center">
+    
+    <!-- Fila para los diferentes planes -->
+    <div class="row">
+      
+      <!-- Plan A: Inicio Brillante -->
+      <div class="columna col-10 col-md-4 mx-auto">
+        
+        <!-- Imagen para el Plan A -->
+        <img src="static/img/Designerprueba1.1.png" class="img-fluid rounded-circle"  style="width: 300px;" alt="Paquete Básico de IMMERSION: marketing digital, sitio web y análisis de datos" title="El Paquete Básico de IMMERSION ofrece estrategias de marketing digital efectivas, un sitio web atractivo y un análisis de datos inicial para ayudar a las empresas a despegar en línea.">
+        
+        <!-- Título y descripción del Plan A -->
+        <p class="experiencia-titulo">"Inicio Brillante"</p>
+        <p>
+          ¡Comienza tu viaje hacia el éxito en línea con nuestro Paquete Básico! 
+          Este paquete es ideal para aquellos que buscan una sólida presencia en Internet. 
+          <strong>Ofrecemos estrategias de marketing digital efectivas, un sitio web atractivo y un análisis de datos inicial para que puedas despegar.</strong> 
+          Haz clic en "Saber más" para descubrir cómo podemos ayudarte a dar los primeros pasos hacia tus objetivos.
+        </p>
+        
+        <!-- Botón para más información del Plan A -->
+        <div class="badges-contenedor">
+          <a href="/propuesta1" type="button" class="btn btn-primary btn-sm">Saber más...</a>
         </div>
-      <section>
-      <!--propuestas-->
-      <section class="experiencia seccion-oscura ">
-        <div class="container text-center">
-          <div class="row "> 
-            <!-- Plan A -->
-            <div class="columna col-10 col-md-4 mx-auto ">
-              <img src="static/img/Designerprueba1.1.png" class="img-fluid rounded-circle " style="width: 300px;" alt="propuesta1.1.1">
-              <p class="experiencia-titulo">"Inicio Brillante"</p>
-              <p>¡Comienza tu viaje hacia el éxito en línea con nuestro Paquete Básico! 
-                Este paquete es ideal para aquellos que buscan una sólida presencia en Internet. 
-                Ofrecemos estrategias de marketing digital efectivas, un sitio web atractivo
-                y un análisis de datos inicial para que puedas despegar. Haz clic en "Saber más" 
-                para descubrir cómo podemos ayudarte a dar los primeros pasos hacia tus objetivos.
-              </p>
-              <div class="badges-contenedor">
-                <a  href="/propuesta1" type="button" class="btn btn-primary btn-sm">Saber más...</a>
-              </div>
-            </div>
-            <!-- Plan B -->
-            <div class="columna col-10 col-md-4 mx-auto ">
-              <img src="static/img/Designer.png" class="img-fluid rounded-circle"  style="width: 300px;" alt="propuesta2.2.2">
-              <p class="experiencia-titulo">"Experiencia de Éxito"</p>
-              <p>Alcanza la excelencia en línea con nuestro Paquete Avanzado. 
-                Este paquete es la opción más completa para aquellos que buscan un impacto significativo.
-                Obtén estrategias de marketing digital de primer nivel, 
-                un sitio web altamente personalizado y un análisis de datos avanzado. 
-                Si buscas la excelencia en línea, este paquete es para ti. 
-                Haz clic en "Saber más" para descubrir cómo podemos potenciar 
-                tu éxito en línea. </p>
-              <div class="badges-contenedor">
-                <a  href="/propuesta3" type="button" class="btn btn-primary btn-sm">Saber más...</a>
-              </div>
-            </div>
-          </div>
+      </div> <!-- Fin del Plan A -->
+      
+      <!-- Plan B: Experiencia de Éxito -->
+      <div class="columna col-10 col-md-4 mx-auto">
+        
+        <!-- Imagen para el Plan B -->
+        <img src="static/img/Designer.png" class="img-fluid rounded-circle" style="width: 300px;" alt="Paquete Avanzado de IMMERSION: marketing digital, posicionamiento web, SEO, SEM, desarrollado sitio web y análisis de datos " title="El Paquete Avanzado de IMMERSION ofrece estrategias de marketing digital efectivas, un sitio web atractivo y un análisis de datos inicial para ayudar a las empresas a despegar en línea, un posicionamiento web SEO y SEM optimo y una mayor atraccion de clientes.">
+        
+        <!-- Título y descripción del Plan B -->
+        <p class="experiencia-titulo">"Experiencia de Éxito"</p>
+        <p>
+          Alcanza la excelencia en línea con nuestro Paquete Avanzado. 
+          Este paquete es la opción más completa para aquellos que buscan un impacto significativo. 
+          <strong>Obtén estrategias de marketing digital de primer nivel, un sitio web altamente personalizado y un análisis de datos avanzado.</strong> 
+          Si buscas la excelencia en línea, este paquete es para ti. 
+          Haz clic en "Saber más" para descubrir cómo podemos potenciar tu éxito en línea.
+        </p>
+        
+        <!-- Botón para más información del Plan B -->
+        <div class="badges-contenedor">
+          <a href="/propuesta3" type="button" class="btn btn-primary btn-sm">Saber más...</a>
         </div>
-      </section>
-        <!--Esquema Quienes somos-->
-        <section class="informeMision">
-          <div class="container seccion-clara">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <h1>IMMERSION SOMOS LO QUE NECESITAS</h1>
-                <h2>MISION</h2>
-                <p>Nuestra misión es impulsar el crecimiento sostenible de nuestros clientes en el ámbito digital. 
-                  Nos comprometemos a crear estrategias de marketing digital altamente escalables, 
-                  diseñadas específicamente para cumplir con los objetivos y metas de cada cliente. 
-                  Trabajamos incansablemente para brindar resultados que no solo cumplan, 
-                  sino que superen las metas establecidas, generando un impacto positivo en el crecimiento de sus negocios.</p>
-                <h2>VISION</h2>
-                <p>Nuestra misión es impulsar el crecimiento sostenible de nuestros clientes en el ámbito digital. 
-                  Nos comprometemos a crear estrategias de marketing digital altamente escalables, 
-                  diseñadas específicamente para cumplir con los objetivos y metas de cada cliente. 
-                  Trabajamos incansablemente para brindar resultados que no solo cumplan, 
-                  sino que superen las metas establecidas, generando un impacto positivo en el crecimiento de sus negocios.</p>
-              </div>
-              <div class="col-14 col-md-6 imagen-container">
-                <img src="static/img/animacion1.svg" class="imagen">
-              </div>
-            </div>
-          </div>
-        </section>
+      </div> <!-- Fin del Plan B -->
+      
+    </div> <!-- Fin de la fila -->
+    
+  </div> <!-- Fin del contenedor principal -->
+</section> <!-- Fin de la sección de propuestas o planes de servicio -->
+
+<!-- Sección para describir la misión y visión de IMMERSION -->
+<section class="informeMision">
+  <!-- Contenedor principal con fondo claro -->
+  <div class="container seccion-clara">
+    
+    <!-- Fila para dividir el contenido en dos columnas: texto e imagen -->
+    <div class="row">
+      
+      <!-- Columna para el texto de la misión y visión -->
+      <div class="col-12 col-md-6">
+        
+        <!-- Título principal -->
+        <h1>IMMERSION: SOMOS LO QUE NECESITAS</h1>
+        
+        <!-- Subtítulos y descripciones de misión y visión -->
+        <h2>MISION</h2>
+        <p>
+          En IMMERSION, nos comprometemos a crear estrategias de marketing digital altamente escalables, diseñadas específicamente para cumplir con los objetivos y metas de cada cliente. Trabajamos incansablemente para brindar resultados que no solo cumplan, sino que superen las metas establecidas, generando un impacto positivo en el crecimiento de sus negocios.
+        </p>
+        
+        <h2>VISION</h2>
+        <p>
+          Nuestra visión es ser la empresa líder en servicios de marketing digital en la región, reconocida por su excelencia en el servicio y sus resultados de impacto.
+        </p>
+        
+      </div> <!-- Fin de la columna del texto -->
+      
+      <!-- Columna para la imagen relacionada con la misión y visión -->
+      <div class="col-12 col-md-6 imagen-container">
+        
+        <!-- Imagen ilustrativa -->
+        <img src="static/img/animacion1.svg" class="imagen" alt="IMMERSION: Impulsamos el crecimiento sostenible de nuestros clientes en el ámbito digital">
+        
+      </div> 
+    </div> 
+    
+  </div> 
+</section> 
+
 
         <!--Que ofrecemos-->
         <section class="ofrecemos seccion-clara">
