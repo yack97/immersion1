@@ -58,17 +58,17 @@ def propuesta3():
 
 #========================
 
-@app.route('/boton1')
+@app.route('/posicionamiento-redes-sociales')
 def boton1():
-    return render_template('boton1.html')
+    return render_template('posicionamiento-redes-sociales.html')
 
-@app.route('/boton2')
+@app.route('/posicionamiento-seo-sem')
 def boton2():
-    return render_template('boton2.html')
+    return render_template('posicionamiento-seo-sem.html')
 
-@app.route('/boton3')
+@app.route('/analisis-datos')
 def boton3():
-    return render_template('boton3.html')
+    return render_template('analisis-datos.html')
 
 
 #=========================
